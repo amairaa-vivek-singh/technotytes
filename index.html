@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Cultural Map</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Explore Cultures Around the World</h1>
+    <div class="map-container">
+      <!-- Add a div for each country -->
+      <div class="country" onclick="showDetails('country1')">
+        <img src="images/japan.png" alt="Japan" />
+        <p>Japan</p>
+      </div>
+      <div class="country" onclick="showDetails('country2')">
+        <img src="images/india.png" alt="India" />
+        <p>India</p>
+      </div>
+      <div class="country" onclick="showDetails('country3')">
+        <img src="images/france.png" alt="France" />
+        <p>France</p>
+      </div>
+      <div class="country" onclick="showDetails('country4')">
+        <img src="images/china.jpg" alt="China" />
+        <p>China</p>
+      </div>
+      <div class="country" onclick="showDetails('country5')">
+        <img src="images/usa.png" alt="U.S.A" />
+        <p>U.S.A</p>
+      </div>
+      <div class="country" onclick="showDetails('country6')">
+        <img src="images/canada.png" alt="Canada" />
+        <p>Canada</p>
+      </div>
+      <div class="country" onclick="showDetails('country7')">
+        <img src="images/germany.png" alt="Germany" />
+        <p>Germany</p>
+      </div>
+      <div class="country" onclick="showDetails('country8')">
+        <img src="images/italy.png" alt="Italy" />
+        <p>Italy</p>
+      </div>
+      <div class="country" onclick="showDetails('country9')">
+        <img src="images/australia.png" alt="Australia" />
+        <p>Australia</p>
+      </div>
+      <div class="country" onclick="showDetails('country10')">
+        <img src="images/brazil.png" alt="Brazil" />
+        <p>Brazil</p>
+      </div>
+      <div class="country" onclick="showDetails('country11')">
+        <img src="images/uk.png" alt="United Kingdom" />
+        <p>United Kingdom</p>
+      </div>
+      <div class="country" onclick="showDetails('country12')">
+        <img src="images/mexico.png" alt="Mexico" />
+        <p>Mexico</p>
+      </div>
+      <div class="country" onclick="showDetails('country13')">
+        <img src="images/southkorea.png" alt="South Korea" />
+        <p>South Korea</p>
+      </div>
+      <div class="country" onclick="showDetails('country14')">
+        <img src="images/spain.png" alt="Spain" />
+        <p>Spain</p>
+      </div>
+      <div class="country" onclick="showDetails('country15')">
+        <img src="images/russia.png" alt="Russia" />
+        <p>Russia</p>
+      </div>
+    </div>
+
+    <!-- Popup for displaying details -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img id="country-image" src="" alt="" />
+        <h2 id="country-name"></h2>
+        <p id="country-details"></p>
+
+        <img id="country-tradition-image" src="" alt="" />
+        <p id="country-tradition"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
